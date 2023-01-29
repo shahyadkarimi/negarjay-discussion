@@ -4,11 +4,17 @@ import React from "react"
 import "./css/styles.css"
 import "./css/custom.css"
 
+// components
+import Discussions from "./components/Discussions"
+
+// contexts
+import DiscussionContext from "./contexts/DiscussionContext"
+
 const App = () => {
   return (
-    <div className="bg-indigo-600">
-      task
-    </div>
+    <DiscussionContext>
+      <Discussions />
+    </DiscussionContext>
   );
 }
 
